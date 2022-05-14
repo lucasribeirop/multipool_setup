@@ -7,24 +7,16 @@
 # This script is intended to be ran from the multipool installer
 #########################################################
 
-if [ -z "${TAG}" ]; then
-	TAG=v1.94
-fi
 
 # Clone the MultiPool repository if it doesn't exist.
-#if [ ! -d $HOME/multipool/yiimp_single ]; then
-#	echo Downloading MultiPool YiiMP Single Server Installer ${TAG}. . .
-#	git clone \
-#		-b ${TAG} --depth 1 \
-#		https://github.com/lucasribeirop/multipool_yiimp_single \
-#		$HOME/multipool/yiimp_single \
-#		< /dev/null 2> /dev/null
-#
-#	echo
-#fi
+if [ ! -d $HOME/multipool/yiimp_single ]; then
+	echo Downloading MultiPool YiiMP Single Server Installer v1.0. . .
+		git clone https://github.com/lucasribeirop/multipool_yiimp_single $HOME/multipool/yiimp_single < /dev/null 2> /dev/null
+	echo
+fi
 
 # Change directory to it.
-cd $HOME/multipool/yiimp_single
+#cd $HOME/multipool/yiimp_single
 
 # Update it.
 #sudo chown -R $USER $HOME/multipool/install/.git/
