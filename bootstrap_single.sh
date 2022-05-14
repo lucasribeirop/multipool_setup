@@ -16,7 +16,7 @@ if [ ! -d $HOME/multipool/yiimp_single ]; then
 fi
 
 # Change directory to it.
-#cd $HOME/multipool/yiimp_single
+cd $HOME/multipool/yiimp_single
 
 # Update it.
 #sudo chown -R $USER $HOME/multipool/install/.git/
